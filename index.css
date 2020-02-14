@@ -1,0 +1,322 @@
+/* 기본 박스 사이징 재 설정 
+(width에 border-width와 padding을 포함하여 계산) */
+*, *::before, *::after{
+  box-sizing: border-box;
+  margin: 0;
+}
+/* 숨김 콘텐츠 */
+.a11y-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  clip: rect(0,0,0,0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+/* CSS Module */
+/* float 이슈를 해결하기 위한 CSS 선언 */
+.clearfix::after{
+  display: block;
+  content: "";
+  clear: both;
+}
+/* 기본 설정 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 1.4rem;
+  font-family: 'Spoqa Han Sans', 'Sans-serif';
+  font-weight: 300;
+  height: auto;
+  width: 1273px;
+}
+header, main, footer{
+  margin: 0 auto;
+}
+/* 배너   */
+header {
+  height: 94px;
+  background-color: darkkhaki;
+}
+.main__banner--mainImg {
+  height: auto;
+  padding: 0;
+}
+.main__banner--imgWord {
+  float: left;
+  height: 200px;
+  margin: 33px 0 0 56px;
+  list-style: none;
+ }
+.main__banner--largeSentence {
+  font-size: 50px;
+  margin: 0;
+  font-weight: 300;
+  color: white;
+  letter-spacing: 2px;
+}
+.main__banner--smallSentence {
+  font-size: 20px;
+  color: white;
+  letter-spacing: 1.1px
+}
+.main__banner--detail {
+  display: inline-block;
+  border:2px solid white;
+  border-radius: 2px;
+  width: 164px;
+  height: 44px;
+  padding: 10px 35px 15px 40px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: white;
+}
+.main__banner--detail:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: blue;
+  font-size: 16px;
+  font-weight: 600;
+}
+.main__banner--img{
+  display: block;
+  height: 600px;
+  background-image: url('https://www.koreanair.com/content/dam/koreanair/kr/New%20Marquee/1280x600/us6_sale_main1(name_o)_1280_modified.jpg');
+}
+.main__btn--btnBox {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  width: 158px;
+  height: 30px;
+  margin-left: 950px;
+  margin-top: -305px;
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  border: 1px solid white;
+  border-radius: 45px; 
+  opacity: .8;
+}
+.main__btn--bannerSelected { 
+  background: url(https://www.koreanair.com/etc/clientlibs/koreanair/images/components/mainpage/btn-banner-activate.png);
+  width: 25px;
+  height: 19px;
+  margin: 4px 0 0 3px;
+  border-color: transparent;
+  background-color: transparent;
+}
+.main__btn--bannerSelectable {
+  background: url(https://www.koreanair.com/etc/clientlibs/koreanair/images/components/mainpage/btn-banner-deactivate.png);
+  width: 19px;
+  height: 19px;
+  padding: 1px 4px 1px 4px;
+  margin: 4px 0 0 3px;
+  background-repeat: no-repeat;
+  border-color: transparent;
+  background-color: transparent;
+}
+.main__btn--bannerStop {
+  background: url(https://www.koreanair.com/etc/clientlibs/koreanair/images/components/mainpage/btn-banner-stop.png);
+  width: 19px;
+  height: 19px;
+  padding: 1px 4px 1px 4px;
+  margin: 4px 0 0 3px;
+  background-repeat: no-repeat;
+  border-color: transparent;
+  background-color: transparent;
+}
+.main__btn--bannerPlayOrPause {
+  background: url(https://www.koreanair.com/etc/clientlibs/koreanair/images/components/mainpage/btn-banner-play.png);
+  width: 19px;
+  height: 19px;
+  padding: 1px 4px 1px 4px;
+  margin: 4px 0 0 3px;
+  background-repeat: no-repeat;
+  border-color: transparent;
+  background-color: transparent;
+}
+.main__btn--bannerSelected:hover, .main__btn--bannerSelectable:hover, .main__btn--bannerStop:hover, .main__btn--bannerPlayOrPause:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0 1px black;
+}
+.main--popUp {
+  position: relative;
+}
+.main--popUpimg {
+  position: absolute;
+  left: 980px;
+  bottom: 270px;
+}
+.main__link--popUp {
+  display: inline-block;
+  position: relative;
+  width: 236px;
+  height: 212px;
+  left: 980px;
+  bottom: 295px;
+}
+.main--popUpSentence {
+  position: absolute;
+  width: 210px;
+  height: 79px;
+  bottom: 0;
+  left: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+}
+.main__btn--popClose {
+  position: absolute;
+  left: 1167px;
+  bottom: 479px;
+  width: 28px;
+  height: 28px;
+  border-color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+  }
+.main__btn--popClose:hover {
+  border: 1px solid black;
+}
+.main--popUpTodaydClose {
+  position: absolute;
+  left: 1020px;
+  bottom: 279px;
+  width: 150px;
+  height: 20px;
+  font-size: 12.5px;
+  color: white;
+}
+.main--popUpTodaydClose:hover {
+  box-shadow: 0 0 0 1px black;
+}
+/* 퀵부킹 영역 */
+/* 진행중 이벤트 */
+.main--promotion {
+  width: 100%;
+  margin-top: 60px;
+  background-color: aquamarine;
+}
+.main--promotionList {
+  width: 100%;
+  background-color: blueviolet;
+}
+.main--promotionBunch {
+  width: 100%;
+  padding-left: 52px;
+  padding-bottom: 20px;
+  font-size: 27px;
+  font-weight: 400;
+  background-color: greenyellow;
+}
+.main--promotionArea {
+  display: flex; 
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+}
+.main--promotionPart {
+background-color: #434343;
+  width: 232px;
+  height: 293px;
+  list-style: none;
+}
+.main--promIng1 {
+  width: 232px;
+  height: 211px;
+  background-repeat: no-repeat;
+}
+.main--promIng2{
+  width: 232px;
+  height: 294px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+}
+.main--promIng3 {
+  width: 232px;
+  height: 294px;
+  background-repeat: no-repeat;
+}
+.main__PromIng4 {
+  width: 232px;
+  height: 294px;
+  background-repeat: no-repeat;
+}
+.main--promIng5 {
+  width: 232px;
+  height: 294px;
+  background-repeat: no-repeat;
+}  
+.main--promotionHeadline {
+  text-align: left;
+  overflow: hidden;
+  font-size: 18px;
+  padding-left: 6px;
+  padding-top: 15px;
+  font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: white;
+}
+.main--promotionContent {
+  text-align: left;
+  overflow: hidden;
+  font-size: 15px;
+  padding-left: 6px;
+  padding-bottom: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #7ed0e0;
+}
+.main--viewAll {
+  background-color: khaki;
+  color: #186686;
+}
+.main__btn--viewAll{
+  background-color: violet;
+  color: #186686;
+}
+.main--promotionListSp {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+.main--promotionSpAreaL {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.main--promotionSpAreaR {
+  display: flex;
+  flex-flow: row wrap;
+}
+.main--promotionSpHeadline {
+ color: white;
+ padding-left: 8px;
+ padding-top: 8px;
+ font-size: 14px;
+ font-weight: 500;
+}
+.main--promotionSpContent {
+  padding-left: 8px;
+  padding-bottom: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #7ed0e0;
+}
+.main--promotionSpNoticeEmphasis {
+  font-weight: 600;
+}
+
+
+
+
