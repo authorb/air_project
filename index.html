@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>대한항공</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <section>
+            <h2 class="a11y-hidden">배너</h2>
+            <div>
+                <ul class="main__banner--mainImg">
+                    <li class="main__banner--imgWord">
+                        <p class="main__banner--largeSentence">미국의 숨은 보석 찾기
+                        </p>
+                        <p class="main__banner--smallSentence">미주 6개 도시 항공권 특가를 확인해 보세요!
+                        </p>
+                        <a href="" class="main__banner--detail">자세히 보기
+                        </a>
+                    </li>
+                    <li class="main__banner--img">
+                    </li>
+                </ul>
+                <ul class="main__btn--btnBox">
+                    <li><button class="main__btn--bannerSelected"></button></li>
+                    <li><button class="main__btn--bannerSelectable"></button></li>
+                    <li><button class="main__btn--bannerSelectable"></button></li>
+                    <li><button class="main__btn--bannerSelectable"></button></li>
+                    <li><button class="main__btn--bannerSelectable"></button></li>
+                    <li><button class="main__btn--bannerStop"></button></li>
+                    <li><button class="main__btn--bannerPlayOrPause"></button></li>
+                </ul>
+            </div>
+            <h2 class="a11y-hidden">팝업</h2>
+            <div class="main--popUp">
+                <img src="https://www.koreanair.com/content/dam/koreanair/Global/Personalization/PC_Floating%20banner/ppz-flt-banner-fastcheck1.png"
+                    alt="스카이패스 팩트 체크 팝업" class="main--popUpimg">
+                <a href="" class="main__link--popUp">
+                    <p class="main--popUpSentence">새로워지는 스카이패스의<br>진실 혹은 오해<br>【확인하기】</p>
+                </a>
+                <button class="main__btn--popClose"></button>
+                <div class="main__banner--downarea">
+                    <a href="" class="main--popUpTodaydClose">
+                        <img src="https://www.koreanair.com/etc/clientlibs/koreanair/images/components/mainpage/checkbox-floating.png"
+                            alt="팝업 24시간 다시 보지 않기">24시간 다시 보지 않기
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- 항공권>>>일반 예매 / 보너스 예매 -->
+        <section class="main--boardingPass">
+            <h2 class="main--ticketing a11y-hidden">예매</h2>
+            <form action="" class="main--reservation">
+                <button class="main__tabBtn--boardingPass">
+                    <img src="https://www.koreanair.com/etc/clientlibs/koreanair/images/components/mainpage/quick-v-tab-icon-list.png"
+                        alt=""> 항공권
+                </button>
+                <div>
+                    <button class="main__btn--generalTicketing">
+                        <img src="https://www.koreanair.com/etc/clientlibs/koreanair/images/components/bookingbar/icn_check.png"
+                            alt="일반 예매 체크">
+                        일반 예매
+                    </button>
+                    <button class="main__btn--bonusTicketing">보너스 예매
+                    </button>
+                </div>
+                <div class="main--trip">
+                    <ul class="main__input--flightSckedule">
+                        <li>
+                            <input type="radio" id="general_ticketing1" name="general_ticketing">
+                            <label for="general_ticketing1" class="main__input--radio">편도</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="general_ticketing2" name="general_ticketing" checked>
+                            <label for="general_ticketing2" class="main__input--radio">왕복</label>
+                        </li>
+                        <li>
+                            <a href="">다구간</a>
+                            <button class="main__btn--q_mark">
+                                <img src="https://www.koreanair.com/etc/clientlibs/koreanair/images/icon-question-mark-sm-wht.png"
+                                    alt="다구간 여정 안내">
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="main__input--boarding">
+                        <li>성인
+                            <button class="main__btn--increase">+</button>
+                            <input type="text">
+                            <button class="main__btn--decrease">-</button>
+                        </li>
+                        <li>소아
+                            <button class="main__btn--q_mark"><img
+                                    src="https://www.koreanair.com/etc/clientlibs/koreanair/images/icon-question-mark-sm-wht.png"
+                                    alt="소아/유아 안내 보기"></button>
+                            <button class="main__btn--increase">+</button>
+                            <input type="text">
+                            <button class="main__btn--decrease">-</button>
+                        </li>
+                        <li>유아
+                            <button class="main__btn--q_mark"><img
+                                    src="https://www.koreanair.com/etc/clientlibs/koreanair/images/icon-question-mark-sm-wht.png"
+                                    alt="소아/유아 안내 보기"></button>
+                            <button class="main__btn--increase">+</button>
+                            <input type="text">
+                            <button class="main__btn--decrease">-</button>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>좌석 등급
+                            <select>
+                                <option value="일반석">일반석</option>
+                                <option value="프레스티지석">프레스티지석</option>
+                                <option value="일등석">일등석</option>
+                            </select>
+                        </li>
+                        <li>
+                            추가옵션<img
+                                src="https://www.koreanair.com/etc/clientlibs/koreanair/images/icon-question-mark-sm-wht.png"
+                                alt="추가옵션 보기">
+                            <button class="main__btn--addOption">선택</button>
+                            <span>결제 통화 KRW</span>
+                        </li>
+                    </ul>
+                    <button class="main__summit--sckedule">항공편 조회</button>
+                </div>
+            </form>
+            <!-- 항공권>>>체크인 -->
+            <h2 class="a11y-hidden">체크인</h2>
+            <form action="" class="main__form--checkIn">
+                <button class="main__btn--checkIn"><img
+                        src="https://www.koreanair.com/etc/clientlibs/koreanair/images/components/mainpage/quick-v-tab-icon-list.png"
+                        alt="">체크인
+                </button>
+            </form>
+            <!-- 항공권>>>출도착/스케줄 -->
+            <h2 class="a11y-hidden">출도착/스케줄</h2>
+            <form action="" class="main__form--departureArrivalSckedule">
+                <button class="main__btn--departureArrival"><img
+                        src="https://www.koreanair.com/etc/clientlibs/koreanair/images/components/mainpage/quick-v-tab-icon-list.png"
+                        alt="출도착/스케줄 이미지">출도착/스케줄
+                </button>
+            </form>
+        </section>
+        <!-- 이상 항공권, 이하 호텔 -->
+        <section class="hotel">
+            <h2 class="a11y-hidden">호텔</h2>
+            <form action="" class="main__form--hotelReservation">
+                <button class="hotel"><img
+                        src="https://www.koreanair.com/etc/clientlibs/koreanair/images/components/mainpage/quick-v-tab-icon-list.png"
+                        alt="호텔 이미지">호텔
+                </button>
+            </form>
+        </section>
+        <!-- 이상 호텔, 이하 렌터카 -->
+        <section>
+            <h2 class="a11y-hidden">렌터카</h2>
+            <form action="" class="main--reservation">
+                <button class="rentar_car"><img
+                        src="https://www.koreanair.com/etc/clientlibs/koreanair/images/components/mainpage/quick-v-tab-icon-list.png"
+                        alt="렌터카 이미지">렌터카
+                </button>
+            </form>
+        </section>
+        <!-- 프로모션 -->
+        <section class="main--promotion">
+            <h2 class="a11y-hidden">이벤트</h2>
+            <div class="main--promotionList">
+                <h3 class="main--promotionBunch">진행 중 이벤트</h3>
+                <ul class="main--promotionArea">
+                    <li class="main--promotionPart">
+                        <a href="">
+                            <img src="https://www.koreanair.com/content/dam/koreanair/kr/Special%20Promotions/promotion%20teaser/new%20main/woori_pc.png"
+                                alt="">
+                            <div class="main--promTitle">
+                                <p class="main--promotionHeadline">우리카드X대한항공이 쏜다!
+                                </p>
+                                <p class="main--promotionContent">대한항공 마일리지 적립에 항공권 경품까지!
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="main--promotionPart">
+                        <a href="">
+                            <img src="https://www.koreanair.com/content/dam/koreanair/kr/Special%20Promotions/promotion%20teaser/new%20main/skyshop_event.png"
+                                alt="기내면세품 선물로 하늘에서 마음을 전하세요">
+                            <div class="main--promIng2">
+                                <p class="main--promotionHeadline">기내면세품 선물로 하늘에서 마음을 전하세요
+                                </p>
+                                <p class="main--promotionContent">스카이숍 서비스 이용시, 대한항공 테디베어 인형과 각인 명찰을 드립니다.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="main--promotionPart">
+                        <a href="">
+                            <img src="https://www.koreanair.com/content/dam/koreanair/kr/Special%20Promotions/promotion%20teaser/new%20main/shinhan_airone_2020_small%20(234x211).png"
+                                alt="신한 Air One 카드가 드립니다!">
+                            <div class="main--promIng3">
+                                <p class="main--promotionHeadline">짧은 여행은 렌터카로 알차게
+                                </p>
+                                <p class="main--promotionContent">1일 무료 + 미국 임차 시 상품권 증정
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="main--promotionPart">
+                        <a href="">
+                            <img src="https://www.koreanair.com/content/dam/koreanair/kr/Special%20Promotions/promotion%20teaser/new%20main/hotelscom_1910.png"
+                                alt="호텔스닷컴 마일리지 적립 안내">
+                            <div class="main--promIng4">
+                                <p class="main--promotionHeadline">호텔스닷컴 마일리지 적립 안내
+                                </p>
+                                <p class="main--promotionContent">호텔이용 USD 1당 스카이패스 1 마일리지 적립 혜택을 누리세요!
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="main--promotionPart">
+                        <a href="">
+                            <img src="https://www.koreanair.com/content/dam/koreanair/kr/Special%20Promotions/promotion%20teaser/new%20main/Hanjin%20Rentacar.jpg"
+                                alt="제주 렌터카 더블 할인 혜택">
+                            <div class="main--promIng5">
+                                <p class="main--promotionHeadline">제주 렌터카 더블 할인 혜택
+                                </p>
+                                <p class="main--promotionContent">할인도, 만족도 두 배!
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <button class="main__btn--promotionL">〈</button>
+                <button class="main__btn--promotionR">〉</button>
+                <a href="" class="main--viewAll">이벤트 전체보기<p class="main__btn--viewAll">+</p></a>
+            </div>
+            <div class="main--promotionListSp">
+                <h3 class="main--promotionBunch">특가 항공권</h3>
+                <ul class="main--promotionSpAreaL">
+                    <li class="main--promotionPart">
+                        <a href="">
+                            <div class="main--promotionSpPrice">
+                                <p class="main--promotionSpHeadline">서울/인천 ↔ 나트랑
+                                </p>
+                                <p class="main--promotionSpContent">KRW 500,300부터
+                                </p>
+                            </div>
+                            <img src="https://www.koreanair.com/content/dam/koreanair/Global/discountTickets/cxr-c.jpg"
+                                alt="서울/인천 나트랑 왕복">
+                        </a>
+                    </li>
+                    <li class="main--promotionPart">
+                        <a href="">
+                            <div class="main--promotionSpPrice">
+                                <p class="main--promotionSpHeadline">서울/인천 ↔ 하노이
+                                </p>
+                                <p class="main--promotionSpContent">KRW 341,500부터
+                                </p>
+                            </div>
+                            <img src="https://www.koreanair.com/content/dam/koreanair/Global/discountTickets/han-c.jpg"
+                                alt="서울/인천 왕복 하노이">
+                        </a>
+                    </li>
+                    <li class="main--promotionPart">
+                        <a href="">
+                            <div class="main--promotionSpPrice">
+                                <p class="main--promotionSpHeadline">서울/인천 ↔ 후쿠오카
+                                </p>
+                                <p class="main--promotionSpContent">KRW 182,000부터
+                                </p>
+                            </div>
+                            <img src="https://www.koreanair.com/content/dam/koreanair/Global/discountTickets/fuk-c.jpg"
+                                alt="서울/인천 왕복 후쿠오카">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="main--promotionSpAreaR">
+                    <li class="main--promotionRTop">
+                        <a href="">
+                            <div class="main--promotionSpPrice">
+                                <p class="main--promotionSpHeadline">서울/인천 ↔ 파리
+                                </p>
+                                <p class="main--promotionSpContent">KRW 829,000부터
+                                </p>
+                            </div>
+                            <img src="https://www.koreanair.com/content/dam/koreanair/Global/discountTickets/cdg-a.jpg"
+                                alt="서울/인천 왕복 파리">
+                        </a>
+                    </li>
+                    <li class="main--promotionRAreaLeft">
+                        <a href="">
+                            <div class="main--promotionSpPrice">
+                                <p class="main--promotionSpHeadline">서울/인천 ↔ 로스앤젤레스
+                                </p>
+                                <p class="main--promotionSpContent">KRW 932,200부터
+                                </p>
+                            </div>
+                            <img src="https://www.koreanair.com/content/dam/koreanair/Global/discountTickets/lax-b.jpg"
+                                alt="서울/인천 왕복 로스앤젤레스">
+                        </a>
+                    </li>
+                    <li class="main--promotionRAreaRignt">
+                        <a href="">
+                            <div class="main--promotionSpPrice">
+                                <p class="main--promotionSpHeadline">서울/인천 ↔ 뉴욕
+                                </p>
+                                <p class="main--promotionSpContent">KRW 1,143,800부터
+                                </p>
+                            </div>
+                            <img src="https://www.koreanair.com/content/dam/koreanair/Global/discountTickets/jfk-b.jpg"
+                                alt="서울/인천 왕복 뉴욕">
+                        </a>
+                    </li>
+                </ul>
+                <a href="">특가항공권 전체보기<p class="main__btn--SpviewAll">+</p></a>
+            </div>
+            <ul class="main--promotionSpNotice">
+                <li>
+                    상기 금액은 유류할증료 및 세금을 포함한 성인 1인 왕복 운임이며, 구매일과 환율에 따라 달라질 수 있습니다.
+                </li>
+                <li>
+                    일부 해외지역 출발 운임은 유류할증료 대신 항공사 부과금액을 포함하고 있습니다.
+                </li>
+                <li>
+                    상기 운임에 해당하는 예약 클래스에 잔여 좌석이 있을 때만 구매 가능하므로, 선택 날짜에 따라 구매 가능 여부가 달라질 수 있습니다.
+                </li>
+                <li class="main--promotionSpNoticeEmphasis">
+                    환불 및 예약 변경에 관련된 규정은 예약 단계 내 상세 운임규정에서 확인하실 수 있습니다.
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
